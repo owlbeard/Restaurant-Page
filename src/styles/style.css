@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+body {
+  font-family: 'Barlow', sans-serif;
+}
+
+*:focus {
+  outline: none;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: black;
+  color: azure;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  background: url(../img/cozy.jpg) no-repeat;
+  background-size: cover;
+  background-position: 0% 50%;
+}
+
+.the-chef {
+  height: 500px;
+  width: auto;
+  border-radius: 50%;
+  padding: 24px;
+  background: rgb(192, 192, 192, 0.3);
+}
+
+.footer {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  gap: 5px;
+  
+}
+
+.footer-img {
+  height: 50px;
+  width: auto;
+  background-color: azure;
+  border-radius: 50%;
+}
+
+.footer-text {
+  color: azure;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 100px;
+  width: auto;
+}
+
+.logo-text {
+  font-size: 48px;
+}
+
+.home-text {
+  font-size: 36px;
+  margin: 0 auto;
+  border-radius: 12px;
+  background: rgb(192, 192, 192, 0.3);
+  padding: 24px;
+  color: azure;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 350px 350px;
+  grid-template-rows: 350px 350px;
+  gap: 48px;
+  background: rgb(192, 192, 192, 0.3);
+  padding: 48px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.fried, .matsu, .shoyu, .lotus {
+  height: 330px;
+  width: 350px;
+  border-radius: 50%;
+}
+
+#menu-header {
+  color: azure;
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.the-chef:hover {
+  transform: rotate( -360deg );            
+  transition: transform 1000ms ease-in-out;
+}
+
+p[class*="header"] {
+  color: azure;
+  font-size: 24px;
+}
+
+.address-img {
+  border-radius: 12px;
+  margin-top: 24px;
+}
+
+.address-text {
+  color: azure;
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: -10px;
+}
+
+img.fried:hover, img.matsu:hover, 
+img.shoyu:hover, img.lotus:hover {
+  transform: scale(1.1);
+}
+
+.navbar {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 12px;
+}
+
+.home, .menu, .contact {
+  background: transparent;
+  border: 0;
+  color: azure;
+  border-radius: 12px;
+  font-size: 20px;
+  padding: 12px;
+}
+
+.home:hover, .menu:hover, .contact:hover {
+  box-shadow: 0 0 10px azure;
+}
+
+.home:active, .menu:active, .contact:active {
+  transform: translateY(4px);
+}
+
+.phone {
+  color: azure;
+  font-size: 20px;
+  font-weight: 900;
+  background: rgba(55, 55, 55, 0.5);
+  border-radius: 12px;
+  padding: 8px;
+}
